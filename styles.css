@@ -1,0 +1,40 @@
+html {
+  background-image: url("containerPic.jpg");
+}
+
+#container {
+  height: 800px;
+  width: 800px;
+  background-color: rgb(206, 151, 169);
+  border: 10px solid rgba(0, 0, 0, 0.3);
+  background-clip: padding-box;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin: 50px;
+}
+
+#one {
+  border-radius: 50%;
+  background-image: radial-gradient(white 10%, black 0%);
+  background-size: 10%;
+}
+
+#two {
+  background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 30px,
+    #ffffff 30px,
+    #ffffff 60px
+  );
+}
+
+#three:hover {
+  transform: rotate(360deg);
+  width: 300px;
+  transition: transform 2s, width 2s;
+}
